@@ -1,0 +1,2 @@
+resize gambar ke 1280x720 [done]
+slider di index.php cukup 10 item (kalau banyak" redundant)
