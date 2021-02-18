@@ -1,0 +1,7 @@
+--------ANNOUNCEMENT--------
+Pada saat web ini dibuat (6 Feb 2021), developer men-design web hanya pada layar 1920x1080 yaitu layar komputer/PC (coba gunakan layar dengan ukuran tersebut supaya mendapatkan hasil maksimal).
+
+karena keterbatasan waktu, developer tidak dapat membuat responsive web untuk berbagai ukuran layar. (mohon dimengerti).
+
+Note: 	- Layar PC 1920x1080
+	- Layar Laptop 1366x768
