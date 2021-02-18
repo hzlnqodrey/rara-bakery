@@ -1,0 +1,398 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Font Face */
+@font-face {
+    font-family: satisfy;
+    src: url(font/Satisfy/Satisfy-Regular.ttf);
+}
+
+@font-face {
+    font-family: monument;
+    src: url(font/Monument_Extended/MonumentExtended-Ultrabold.otf);
+}
+
+@font-face {
+    font-family: montserrat;
+    src: url(font/Montserrat/Montserrat-Regular.ttf);
+}
+
+/* ----------------------------------- */
+/* VIDEO HERO BANNER ALL CONFIG */
+/* banner config */
+
+#logo {
+    font-family: satisfy;
+}
+
+.modifikasi_content1 .display-4 {
+    color: seashell;
+    font-family: monument;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    text-align: center;
+    letter-spacing: 10px;
+    transform: translate(-50%, -50%);
+    transition: .4s linear;
+
+}
+.modifikasi_content1 .display-4:hover {
+    color: rgb(177, 59, 46);  
+}
+.modifikasi_content2 .display-4 {
+    color: seashell;
+    font-family: satisfy;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    text-align: center;
+    text-decoration: none;
+    transform: translate(-50%, -50%);
+    transition: .4s linear;
+   
+}
+.modifikasi_content2 .display-4:hover {
+    color: rgb(177, 59, 46);  
+}
+
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 1199px) {
+    div.modifikasi_content1 .display-4 {
+      font-size: 20px;
+    }
+
+    div.modifikasi_content2 .display-4 {
+        font-size: 100px;
+    }
+
+    div.tengah2 .my-4 {
+        width: 100px;
+        border-width: 3.5px;
+    }
+
+    div.tengah2 p {
+        font-size: 25px;
+    }
+  }
+  
+  /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+  @media screen and (max-width: 1200px) {
+    div.modifikasi_content1 .display-4 {
+      font-size: 12.5px;
+      top: 20%;
+    }
+
+    div.modifikasi_content2 .display-4 {
+        font-size: 50px;
+    }
+
+    div.tengah2 .my-4 {
+        width: 50px;
+        border-width: 2.5px;
+    }
+
+    div.tengah2 p {
+        font-size: 15px;
+    }
+
+    div.tengah {
+        margin-top: 200px;
+    }
+  }
+
+
+.tengah2 hr {
+    border-color: rgb(177, 59, 46);
+   
+    
+
+}
+
+.tengah2 {
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: seashell;
+    text-align: center;
+}
+
+/* button config */
+.tengah {
+    margin-top: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+.tombol {
+    background: none;
+    border: 3px solid #000;
+    font-family: montserrat, sans-serif;
+    text-transform: uppercase;
+    padding: 12px 20px;
+    min-width: 300px;
+    margin: 10px;
+    cursor: pointer;
+    transition: color 0.4s linear;
+}
+.tombol:hover{
+    color: #fff;
+}
+.tombol::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+}
+.tombol1::before{
+    transform: scaleY(0);
+}
+.tombol:hover::before{
+    transform: scaleY(1);
+}
+
+/* Falling Arrow Config */
+.tengah3 {
+    position: absolute;
+    top: 95%;
+    left: 49.25%;
+    
+}
+
+.scroll-down {
+  height: 50px;
+  width: 30px;
+  border: 2px solid black;
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.scroll-down::before,
+.scroll-down::after {
+  content: "";
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  height: 10px;
+  width: 10px;
+  transform: translate(-50%, -100%) rotate(45deg);
+  border: 2px solid black;
+  border-top: transparent;
+  border-left: transparent;
+  animation: scroll-down 1s ease-in-out infinite;
+}
+.scroll-down::before {
+  top: 30%;
+  animation-delay: 0.3s;
+  /* animation: scroll-down 1s ease-in-out infinite; */
+}
+
+@keyframes scroll-down {
+  0% {
+    /* top:20%; */
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    top: 90%;
+    opacity: 0;
+  }
+}
+
+
+/* video config */
+.full-screen {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.full-screen video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -999;
+}
+/* ----------------------------------- */
+
+/* WHAT WE MAKE - judul banner section 2 */
+
+.kotak1 .display-4 {
+    margin-top: 20px;
+    color: black;
+}
+.kotak1 {
+    font-family: montserrat;
+    width: 100%;
+    height: 130px;
+    background-color: #F7FF00;
+    text-align: center;
+    cursor: pointer;
+    transition: color 0.4s linear;
+}
+
+.kotak1:hover {
+    font-family: montserrat;
+    color: white;
+    background-color: black;
+    border: 5px solid #000;
+}
+
+.kotak1::before{
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+    transform: scaleX(0);
+}
+.kotak1:hover::before{
+    transform: scaleX(1); 
+}
+/* carousel config */
+.carousel-item {
+    height: 840px;
+}
+
+.carousel-caption .display-4{
+    font-family: satisfy;
+    font-size: 150px;
+    margin-bottom: 290px;
+    text-decoration: none;
+    background: linear-gradient(to right, rgb(255, 255, 255) 50%, #FF5858 50%, #CC2E5D);
+    background-size: 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.4s linear;
+   
+}
+
+.carousel-caption .display-4:hover {
+    background-position: -100%;
+}
+
+/* ---------------------------------------------------- */
+/* footer / kaki */
+/* kaki1 */
+.kaki1 {
+    width: 100%;
+    height: 150px;
+    background: rgb(53, 51, 51);
+}
+
+.lambang {
+    position: absolute;
+    width: 600px;
+    height: 120px;
+    /* border: 2px solid red; */
+    margin-top: 17px;
+    margin-left: 50px;  
+}
+
+.lambang h4 {
+    color: seashell;
+    font-family: satisfy;
+    text-align: left;
+}
+
+.lambang p {
+    color: rgb(42, 165, 138);
+    text-align: justify;
+}
+
+.media-sosial {
+    position: absolute;
+    width: 620px;
+    height: 70px;
+    margin-top: 40px;
+    margin-left: 600px;
+    color: rgb(42, 165, 138);
+}
+
+.media-sosial span {
+    margin-left: 45px;    
+}
+
+
+
+.fa-instagram {
+    color: rgb(131,58,180);
+}
+
+
+
+
+
+.about {
+    position: absolute;
+    width: 490px;
+    height: 120px;
+    margin-top: 12px;
+    margin-left: 1360px;
+}
+
+.about h3 {
+    color: seashell;
+    text-align: right;
+}
+
+.about hr {
+    margin-top: -2px;
+    margin-right: 1px;
+    border-color: rgb(177, 59, 46);
+    width: 100px;
+    border-width: 3.5px;
+}
+
+.about p {
+    color: rgb(42, 165, 138);
+    margin-top: -12px;
+    /* color: seashell; */
+    text-align: right;
+    font-size: 16px;
+}
+
+
+/* kaki2 */
+.kaki2 {
+    width: 100%;
+    height: 30px;
+    background: rgb(19, 18, 18);
+}
+
+.kaki2 p {
+    color: seashell;
+    text-align: center;
+}
+/* ---------------------------------------------------- */
+

@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    padding: 0;
+    
+}
+
+@font-face {
+    font-family: montserrat;
+    src: url(font/Montserrat/Montserrat-Regular.ttf);
+}
+
+.tes {
+    position: absolute;
+    top:  50%;
+    left:  50%;
+    transform: translate(-50%, -50%);
+}
+
+.content {
+ 
+    width: 450px;
+    height: 820px;
+    border: 2px solid silver;
+    border-radius: 2%;
+    font-family: montserrat;
+    background-color: white;
+    box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.959);
+}
+
+.content .form-group {
+    margin-top: 5px;
+}
+
+.alert {
+    margin: auto;
+}
+
+.content #nama{
+    margin-top: 10px;
+}
+
+.content #password1 {
+    margin-top: 10px;
+}
+
+#button {
+    margin-top: 10px;
+}
+
+h1 {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}

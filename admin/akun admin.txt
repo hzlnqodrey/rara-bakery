@@ -1,0 +1,10 @@
+admin
+	- id_admin [auto increment]
+	- username
+		1. rarabakery.com
+	- password
+		1. rarabakery.com
+	- nama_lengkap
+		1. Rara bakery
+
+
